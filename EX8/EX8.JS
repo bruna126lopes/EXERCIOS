@@ -1,6 +1,11 @@
-var x = parseFloat(prompt("Quanto voce ganha por hora?: "));
-var y = parseFloat(prompt("Quantas horas no mes?: "));
+function calcularSalario(ganhoPorHora, horasTrabalhadas) {
+    return ganhoPorHora * horasTrabalhadas;
+}
 
-res = (x * y) * 30 
+var ganhoPorHora = parseFloat(prompt("Quanto você ganha por hora?: "));
+var horasTrabalhadas = parseInt(prompt("Quantas horas você trabalha por mês?: "));
 
-console.log("Seu salario e igual: R$", res);
+var salarioTotal = calcularSalario(ganhoPorHora, horasTrabalhadas);
+
+console.log("Seu salário é de: " + salarioTotal);
+alert("Seu salário é de: " + salarioTotal);
